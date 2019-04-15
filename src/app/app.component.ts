@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'game-event-listening';
+  countList = [];
+
+  onCurrentCounting(count: number) {
+    this.countList.push(count);
+  }
 }
